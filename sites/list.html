@@ -1,7 +1,28 @@
-<table style="width:100%">
-	<tr ng-repeat="host in HostsList">
-		<td>{{host.IP}}</td>
-		<td>{{host.HostName}}</td>
-		<td><a>See details >> </a></td>
-	</tr>
-</table>
+<div class="row">	
+	<div class="col-lg-12">
+		<h1>
+			IP List
+		</h1>
+	</div>	
+</div>
+<div class="row">
+	<div class="col-lg-12">
+		<table id="IpTable">
+			<tr>
+				<th>Status</th>
+				<th>IP</th>
+				<th>Host Name</th>
+				<th></th>
+			</tr>
+			<tr ng-repeat="host in HostsList">
+				<td>
+					<div class="StatusCircle" ng-class="{'offline':host.Status == 0, 'online':host.Status == 1}"></div>
+						<span class="hidden-sm hidden-xs">{{GetStatus(host.Status)}}</span>
+				</td>
+				<td>{{host.IP}}</td>
+				<td>{{host.HostName}}</td>
+				<td><a ng-click="GoToDetails(host.IP)" ui-sref=>See details</a></td>
+			</tr>
+		</table>
+	</div>
+</div>

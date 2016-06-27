@@ -2,6 +2,11 @@
 	background:#333;
 	height:100vh
 }
+@media screen and (max-width: 970px) {
+    .MainMenu {
+        height: auto;
+    }
+}
 	.MainMenu button{
 		width:100%;
 	    height: 50px;
@@ -16,3 +21,37 @@
 		cursor: pointer;
 		color:dodgerblue;
 	}
+	#IpTable{
+		width:100%;
+	}
+	#IpTable td,
+	#IpTable th{
+		border:1px solid black;
+		padding:5px;
+	}
+	#IpTable th{
+		text-align: center;
+	}
+	#IpTable td:nth-child(1){
+		width:80px;
+	}
+	#IpTable td:nth-child(3){
+		width:150px;
+		text-align: center;
+	}
+	.StatusCircle{
+		width:15px;
+		height: 15px;
+		border:1px solid black;
+		border-radius:15px;
+		display: inline-block;
+	}
+	.offline{
+		background:red;
+	}
+	.online{
+		background:green;
+	}
+
+	.center { text-align: center}
+td.center span { display: table; }
