@@ -2,17 +2,17 @@
 	background:#333;
 	height:100vh
 }
-	.MainMenu ul{
-		list-style-type: none;
+	.MainMenu button{
 		width:100%;
-	}
-	.MainMenu li{
 	    height: 50px;
 	    text-align: center
 	    width: 100%;
+	    background:transparent;
+	    border:0;
 	    color: white;
 	    padding-top:15px;
 	}
-	.MainMenu li:hover{
+	.MainMenu button:hover{
 		cursor: pointer;
+		color:dodgerblue;
 	}
