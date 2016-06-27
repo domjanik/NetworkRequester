@@ -1,0 +1,17 @@
+<table id="IpTable">
+	<tr>
+		<th>Status</th>
+		<th>IP</th>
+		<th>Host Name</th>
+	</tr>
+	<tr>
+		<td>
+					<div class="StatusCircle" ng-class="{'offline':selectedHost.Status == 0, 'online':selectedHost.Status == 1}"></div>
+						<span class="hidden-sm hidden-xs">{{GetStatus(selectedHost.Status)}}</span>
+				</td>
+		<td>{{selectedHost.IP}}</td>
+		<td>{{selectedHost.HostName}}</td>
+	</tr>
+</table>
+
+{{History}}

@@ -21,7 +21,9 @@
 				</td>
 				<td>{{host.IP}}</td>
 				<td>{{host.HostName}}</td>
-				<td><a ng-click="GoToDetails(host.IP)" ui-sref=>See details</a></td>
+				<td><a href="" ui-sref="Details({ 
+          host:host
+        })">See details</a></td>
 			</tr>
 		</table>
 	</div>
