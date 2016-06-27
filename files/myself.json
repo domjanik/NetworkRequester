@@ -1,13 +1,12 @@
 [
 	{
-		"IP":"192.168.1.1",
-		"HostName":"Router",
-		"LogPath":"Router.json",
-		"Status":0
+		"Date":"11.02.2016",
+		"ChangedTo":1,
 	},{
-		"IP":"127.0.0.1",
-		"HostName":"myself",
-		"LogPath":"myself.json",
-		"Status":1
+		"Date":"12.03.2016",,
+		"ChangedTo":0,
+	},{
+		"Date":"13.04.2016",
+		"ChangedTo":1,
 	}
 ]
