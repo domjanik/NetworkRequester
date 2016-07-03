@@ -1,4 +1,5 @@
-<table id="IpTable">
+<a href="" ui-sref="List"><< Back</a>
+<table class="IpTable">
 	<tr>
 		<th>Status</th>
 		<th>IP</th>
@@ -13,5 +14,24 @@
 		<td>{{selectedHost.HostName}}</td>
 	</tr>
 </table>
+<br><br>
+<table class="IpTable"> 
+	<tr>
+		<th>
+			Date
+		</th>
+		<th>
+			New status
+		</th>
+	</tr>
+	<tr ng-repeat="hist in History">
+		<td>
+			{{hist.Date}}
+		</td>
+		<td>
+			{{hist.ChangedTo}}
+		</td>
+	</tr>
 
-{{History}}
+
+</table>

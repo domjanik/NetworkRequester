@@ -21,21 +21,21 @@
 		cursor: pointer;
 		color:dodgerblue;
 	}
-	#IpTable{
+	.IpTable{
 		width:100%;
 	}
-	#IpTable td,
-	#IpTable th{
+	.IpTable td,
+	.IpTable th{
 		border:1px solid black;
 		padding:5px;
 	}
-	#IpTable th{
+	.IpTable th{
 		text-align: center;
 	}
-	#IpTable td:nth-child(1){
+	.IpTable td:nth-child(1){
 		width:80px;
 	}
-	#IpTable td:nth-child(3){
+	.IpTable td:nth-child(3){
 		width:150px;
 		text-align: center;
 	}

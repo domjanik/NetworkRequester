@@ -1,13 +1,11 @@
-[
-	{
-		"IP":"192.168.1.1",
-		"HostName":"Router",
-		"LogPath":"Router.json",
-		"Status":0
-	},{
-		"IP":"127.0.0.1",
-		"HostName":"myself",
-		"LogPath":"myself.json",
-		"Status":1
-	}
-]
+[{
+	"IP": "192.168.1.1",
+	"HostName": "Router",
+	"LogPath": "Router.json",
+	"Status": 0
+}, {
+	"IP": "127.0.0.1",
+	"HostName": "myself",
+	"LogPath": "myself.json",
+	"Status": 1
+}]
