@@ -1,11 +1,31 @@
 .MainMenu{
 	background:#333;
-	height:100vh
+	height:100%
+}
+.IpMainTable{
+	margin-top:30px;
+	width: 300px
+}
+.IpMainTable td{
+	border:1px solid black;
+	padding:5px;
+	min-width: 50px
 }
 @media screen and (max-width: 970px) {
     .MainMenu {
         height: auto;
     }
+    .Window{
+    	height: calc(100% - 50px) !important;
+    }
+}
+.Window{
+    overflow: auto;
+    height: 100%;
+}
+.IpListInfo{
+    font-size: 20px !important;
+    font-weight: bold;
 }
 	.MainMenu button{
 		width:100%;

@@ -5,7 +5,10 @@ app.controller("MainController",function($scope, $http, $state, $stateParams){
 	$scope.online = 0;
 	$scope.offline = 0;
 	
-
+  $scope.ReloadState=function()
+  {
+    $state.go($state.current, {}, {reload: true});
+  }
     $scope.GetStatus=function(_status){
     	if(_status == 1){
     		return "Online";

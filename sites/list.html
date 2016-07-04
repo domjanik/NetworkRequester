@@ -1,8 +1,12 @@
 <div class="row">	
 	<div class="col-lg-12">
 		<h1>
-			IP List
+			IP List <span class="IpListInfo">( {{online}}<div class="StatusCircle online"></div> / {{offline}}<div class="StatusCircle offline"></div>)</span>
+			<button class="btn btn-primary pull-right" ng-click="ReloadState()">
+				Refresh
+			</button>
 		</h1>
+			
 	</div>	
 </div>
 <div class="row">

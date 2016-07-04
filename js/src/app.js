@@ -6,12 +6,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
   //
   // Now set up the states
   	$stateProvider
-    .state('/', {
+/*    .state('/', {
     		url:"/",
       		templateUrl: "sites/home.html",
       		controller: 'MainController'
-    })
-    .state('List', {
+    })*/
+    .state('/', {
+      url:"/",
 		templateUrl: "sites/list.html",
 	   	controller: 'MainController'
 	})

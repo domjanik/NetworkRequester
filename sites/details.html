@@ -1,4 +1,4 @@
-<a href="" ui-sref="List"><< Back</a>
+<a href="" ui-sref="/"><< Back</a>
 <table class="IpTable">
 	<tr>
 		<th>Status</th>
@@ -29,7 +29,8 @@
 			{{hist.Date}}
 		</td>
 		<td>
-			{{hist.ChangedTo}}
+			<div class="StatusCircle" ng-class="{'offline':hist.ChangedTo == 0, 'online':hist.ChangedTo == 1}"></div>
+			{{GetStatus(hist.ChangedTo)}}
 		</td>
 	</tr>
 
