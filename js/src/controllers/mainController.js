@@ -1,9 +1,18 @@
-app.controller("MainController",function($scope, $http, $state, $stateParams){
+app.controller("MainController",function($scope, $state, $stateParams, mainService){
 
-    $scope.History = [];
-	$scope.HostsList = [];
-	$scope.online = 0;
-	$scope.offline = 0;
+    $scope.History = function(){
+      return mainService.HostHistory;
+    };
+    $scope.HostsList = function(){
+      return mainService.HostsList;
+    };
+    $scope.online = function(){
+      return mainService.online;
+    };
+    $scope.offline = function(){
+      return mainService.offline;
+    };
+	
 	
   $scope.ReloadState=function()
   {
@@ -18,24 +27,10 @@ app.controller("MainController",function($scope, $http, $state, $stateParams){
     	}
     }
     $scope.GetHistory = function(address){
-       	$http.get('files/' + address)
-       		.then(function(res){
-          		$scope.History = res.data;                
-	    	});
+       	mainService.GetHistory(address)
     }
     $scope.LoadStatuses = function(){
-    	$http.get('files/addresses.json')
-    	    .then(function(res){
-          		$scope.HostsList = res.data;                
-          		for(var i=0;i<$scope.HostsList.length;i++){
-          		if($scope.HostsList[i].Status == 1){
-          			$scope.online++;
-          		}
-          		else{
-	          		$scope.offline++;	
-          		}
-          	}
-    	});
+    	mainService.LoadStatuses()
     }
     $scope.init = function () {
     if ($stateParams != null && $stateParams.host !=null) {
