@@ -1,5 +1,5 @@
 <div class="row">	
-	<div class="col-lg-12">
+	<div class="col-md-12">
 		<h1>
 			IP List <span class="IpListInfo">( {{online()}}<div class="StatusCircle online"></div> / {{offline()}}<div class="StatusCircle offline"></div>)</span>
 			<button class="btn btn-primary pull-right" ng-click="ReloadState()">
@@ -10,7 +10,7 @@
 	</div>	
 </div>
 <div class="row">
-	<div class="col-lg-12">
+	<div class="col-md-12">
 		<table class="IpTable">
 			<tr>
 				<th>Status</th>
@@ -25,7 +25,7 @@
 				</td>
 				<td>{{host.IP}}</td>
 				<td>{{host.HostName}}</td>
-				<td><a href="" ui-sref="Details({host:host})">See details</a></td>
+				<td><button ui-sref="Details({host:host})" class="btn btn-primary ">See details</button></td>
 			</tr>
 		</table>
 	</div>
